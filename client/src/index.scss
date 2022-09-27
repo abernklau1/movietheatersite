@@ -22,25 +22,60 @@ body {
   background-color: var(--black);
 }
 
-.link, .logo p {
-    color: var(--burgundy);
+a, ul {
+  text-decoration: none;
 }
 
-.link {
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 25%;
+  li {
+    padding-top: 12px;
+  }
+}
+
+a, .logo p {
+    color: var(--burgundy);
+    font-weight: bold;
+}
+
+a {
   &:hover {
     opacity: .7;
   }
-
-  text-decoration: none;
 }
 
 .logo {
   margin: .5rem 1rem;
   h1 {
     font-size: 2rem;
+    transform: skewX(-10deg);
   }
 
   h1, p {
     margin: 0;
   }
 }
+
+ .navbar {
+   border-bottom: 2px solid var(--burgundy);
+   div {
+     width: 100%;
+     display: flex;
+   }
+
+   .logo-links {
+     justify-content: space-between;
+   }
+
+   .user-location {
+    justify-content: flex-start;
+    padding: .5rem 0 .3rem .9rem;
+    color: var(--burgundy);
+    h3 {
+      margin: 0;
+    }
+   }
+ }

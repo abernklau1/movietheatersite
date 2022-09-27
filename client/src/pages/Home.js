@@ -1,8 +1,8 @@
-import { Logo } from "../components"
+import { Navbar } from "../components"
 
 const Home = () => {
   return <section>
-    <Logo />
+    <Navbar />
   </section>
 }
 
