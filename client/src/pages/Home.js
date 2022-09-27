@@ -1,8 +1,6 @@
-import { Navbar } from "../components"
-
 const Home = () => {
   return <section>
-    <Navbar />
+    <h1>Hello</h1>
   </section>
 }
 
